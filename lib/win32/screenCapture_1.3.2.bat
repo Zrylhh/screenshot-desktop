@@ -32,6 +32,7 @@ using System.Drawing;
 using System.Drawing.Imaging;
 using System.Collections.Generic;
 using Microsoft.VisualBasic;
+using System.Windows.Forms;
 
 
 
@@ -54,6 +55,12 @@ public class ScreenCapture
 
     public Image CaptureScreen()
     {
+        /// set deviceName  by zrylhh
+		  Screen CurrentScreen = Screen.FromPoint(new Point(Cursor.Position.X, Cursor.Position.Y));
+        Console.WriteLine("deviceName : "+CurrentScreen.DeviceName);
+        deviceName = CurrentScreen.DeviceName;
+        
+        
         if (!deviceName.Equals(""))
         {
             CaptureSpecificWindow();
