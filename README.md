@@ -55,3 +55,6 @@ screenshot({ filename: '/Users/brian/Desktop/demo.png' })
 ## Licence
 
 MIT &copy; [Ben Evans](https://bencevans.io)
+
+
+## There will be some upgrade to make sure that it will capture the screen which your mouse on .
